@@ -1,0 +1,9 @@
+<suite name="PackageSuite">
+    <test name="PackageTest">
+        <packages>
+            <package name="org.basics.selenium"/>
+            <package name="org.basics.testngimpl"/>
+            <package name="org.basics.testng"/>
+        </packages>
+    </test>
+</suite>

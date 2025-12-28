@@ -1,0 +1,58 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "CatsBreedsList",
+  "type": "array",
+  "items": {
+    "type": "object",
+    "properties": {
+      "weight": {
+        "type": "object",
+        "properties": {
+          "imperial": { "type": "string" },
+          "metric": { "type": "string" }
+        },
+        "required": ["imperial", "metric"]
+      },
+      "id": { "type": "string" },
+      "name": { "type": "string" },
+      "breed_group": { "type": ["string", "null"] },
+      "cfa_url": { "type": ["string", "null"] },
+      "vetstreet_url": { "type": ["string", "null"] },
+      "vcahospitals_url": { "type": ["string", "null"] },
+      "temperament": { "type": ["string", "null"] },
+      "origin": { "type": ["string", "null"] },
+      "country_codes": { "type": ["string", "null"] },
+      "country_code": { "type": ["string", "null"] },
+      "description": { "type": ["string", "null"] },
+      "life_span": { "type": ["string", "null"] },
+      "indoor": { "type": ["integer", "null"] },
+      "lap": { "type": ["integer", "null"] },
+      "alt_names": { "type": ["string", "null"] },
+      "adaptability": { "type": ["integer", "null"] },
+      "affection_level": { "type": ["integer", "null"] },
+      "child_friendly": { "type": ["integer", "null"] },
+      "cat_friendly": { "type": ["integer", "null"] },
+      "dog_friendly": { "type": ["integer", "null"] },
+      "energy_level": { "type": ["integer", "null"] },
+      "bidability": { "type": ["integer", "null"] },
+      "grooming": { "type": ["integer", "null"] },
+      "health_issues": { "type": ["integer", "null"] },
+      "intelligence": { "type": ["integer", "null"] },
+      "shedding_level": { "type": ["integer", "null"] },
+      "social_needs": { "type": ["integer", "null"] },
+      "stranger_friendly": { "type": ["integer", "null"] },
+      "vocalisation": { "type": ["integer", "null"] },
+      "experimental": { "type": ["integer", "null"] },
+      "hairless": { "type": ["integer", "null"] },
+      "natural": { "type": ["integer", "null"] },
+      "rare": { "type": ["integer", "null"] },
+      "rex": { "type": ["integer", "null"] },
+      "suppressed_tail": { "type": ["integer", "null"] },
+      "short_legs": { "type": ["integer", "null"] },
+      "wikipedia_url": { "type": ["string", "null"] },
+      "hypoallergenic": { "type": ["integer", "null"] },
+      "reference_image_id": { "type": ["string", "null"] }
+    },
+    "required": ["weight", "id", "name"]
+  }
+}

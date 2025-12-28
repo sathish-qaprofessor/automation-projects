@@ -1,0 +1,46 @@
+<suite name="MethodsSuite" parallel="methods" thread-count="5">
+    <test name="MethodsTest">
+        <classes>
+            <class name="org.basics.locators.ClassNameElementLocatorStrategy">
+                <methods>
+                    <include name="classNameStrategy"/>
+                </methods>
+            </class>
+            <class name="org.basics.locators.IdElementLocatorStrategy">
+                <methods>
+                    <include name="idStrategy"/>
+                </methods>
+            </class>
+            <class name="org.basics.locators.NameElementLocatorStrategy">
+                <methods>
+                    <include name="nameStrategy"/>
+                </methods>
+            </class>
+            <class name="org.basics.locators.TagNameElementLocatorStrategy">
+                <methods>
+                    <include name="tagNameStrategy"/>
+                </methods>
+            </class>
+            <class name="org.basics.locators.LinkTextElementLocatorStrategy">
+                <methods>
+                    <include name="linkTextStrategy"/>
+                </methods>
+            </class>
+            <class name="org.basics.locators.PartialLinkTextElementLocatorStrategy">
+                <methods>
+                    <include name="partialLinkTextStrategy"/>
+                </methods>
+            </class>
+            <class name="org.basics.locators.CssSelectorElementLocatorsStrategy">
+                <methods>
+                    <include name="cssSelectorGettingMultipleElementsStrategy"/>
+                </methods>
+            </class>
+            <class name="org.basics.locators.XpathElementLocatorStrategy">
+                <methods>
+                    <include name="xpathByClassStrategy"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>

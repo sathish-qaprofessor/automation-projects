@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="FullTestSuite" verbose="1">
+  <test name="AllTests">
+    <classes>
+      <class name="org.automation.tests.SignInTests"/>
+      <class name="org.automation.tests.ContactUsTests"/>
+      <class name="org.automation.tests.StoreHomeTests"/>
+    </classes>
+  </test>
+</suite>
+

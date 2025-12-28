@@ -1,0 +1,9 @@
+name: PackageSuite
+
+tests:
+  - name: PackageTest
+    packages:
+      - org.basics.selenium
+      - org.basics.testngimpl
+      - org.basics.testng
+

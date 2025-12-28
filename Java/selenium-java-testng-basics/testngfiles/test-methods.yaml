@@ -1,0 +1,36 @@
+name: MethodsSuite
+tests:
+  - name: MethodsTest
+    classes:
+      - name: org.basics.locators.ClassNameElementLocatorStrategy
+        methods:
+          - name: classNameStrategy
+      - name: org.basics.locators.CssSelectorElementLocatorStrategy
+        methods:
+          - name: cssSelectorByClassStrategy
+          - name: cssSelectorByIdStrategy
+          - name: cssSelectorByAttributeStrategy
+          - name: cssSelectorByTagStrategy
+          - name: cssSelectorByMultipleAttributeStrategy
+      - name: org.basics.locators.IdElementLocatorStrategy
+        methods:
+          - name: idStrategy
+      - name: org.basics.locators.LinkTextElementLocatorStrategy
+        methods:
+            - name: linkTextStrategy
+      - name: org.basics.locators.NameElementLocatorStrategy
+        methods:
+            - name: nameStrategy
+      - name: org.basics.locators.PartialLinkTextElementLocatorStrategy
+        methods:
+            - name: partialLinkTextStrategy
+      - name: org.basics.locators.TagNameElementLocatorStrategy
+        methods:
+            - name: tagNameStrategy
+      - name: org.basics.locators.XPathElementLocatorStrategy
+        methods:
+            - name: xpathByClassStrategy
+            - name: xpathByAttributeStrategy
+            - name: xpathGetMultipleElements
+            - name: xpathByPartialAttributeStrategy
+
