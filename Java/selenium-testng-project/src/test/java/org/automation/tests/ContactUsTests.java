@@ -16,7 +16,6 @@ public class ContactUsTests extends SeleniumTestBase {
     @BeforeMethod
     public void beforeTest() {
         String baseUrl = ConfigResolver.resolve("baseUrl");
-        System.out.println("Navigating to base URL: " + baseUrl);
         navigateToUrl(baseUrl);
     }
 

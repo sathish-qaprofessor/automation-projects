@@ -1,7 +1,7 @@
 # RestAssured Ext API Project
 
 ## Project Overview
-This project is a Java-based API automation framework for testing RESTful APIs, specifically focused on The Cat API and Joke API endpoints. It leverages RestAssured for HTTP requests, TestNG for test orchestration, and ExtentReports for reporting. The framework is modular, extensible, and supports schema validation, configuration management, and logging.
+This project is a Java-based API automation framework for testing RESTful APIs. It leverages RestAssured for HTTP requests, TestNG for test orchestration, and ExtentReports for reporting. The framework is modular, extensible, and supports schema validation, configuration management, and logging.
 
 ## Project Structure
 ```

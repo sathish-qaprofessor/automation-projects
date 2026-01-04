@@ -1,6 +1,6 @@
 # Selenium TestNG Project — README (Updated)
 
-This README documents how to set up, configure and run tests for this Selenium + TestNG automation project. It corrects the project structure details and provides exact commands to execute tests using `testng.xml`.
+This README documents how to set up, configure and run tests for this Selenium + TestNG automation project. It presents the project structure details and provides exact commands to execute tests using `testng.xml`.
 
 ---
 
