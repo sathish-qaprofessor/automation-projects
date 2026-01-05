@@ -11,14 +11,24 @@ This repository contains multiple automation testing projects organized by techn
   - Uses java-api-framework
   - Maven-based project structure
 
+    ![Extended Rest Assured API Project](images/restassured-project.gif)
+
+  - Extended TestNG, Maven and Rest Assured API Framework
+  
+    ![Java API Framework](images/rest-assured-framework.gif)
+
 
 - **[Selenium TestNG Project](Java/selenium-testng-project/)** - UI automation with Selenium and TestNG
   - Uses testng-selenium-framework library
   - Maven-based project structure
 
-  - ![selenium-testng-project](images/selenium-project.gif)
+    ![selenium-testng-project](images/selenium-project.gif)
 
-  - ![selenium-testng-framework](images/testng-framework.gif)
+
+  - Selenium TestNG framework - UI automation Framework developed using Selenium, TestNG, Maven, Extent Report
+
+    ![selenium-testng-framework](images/testng-framework.gif)
+
 
 - **[Selenium Java TestNG Basics](Java/selenium-java-testng-basics/)** - Core Selenium and TestNG concepts
   - Cross-browser testing
