@@ -11,7 +11,7 @@ This repository contains multiple automation testing projects organized by techn
   - Uses java-api-framework
   - Maven-based project structure
 
-    ![Extended Rest Assured API Project](images/restassured-project.gif)
+    ![Extended-RestAssured-Project](images/restassured-project.gif)
 
   - Extended TestNG, Maven and Rest Assured API Framework
   
