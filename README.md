@@ -16,8 +16,8 @@ This repository contains multiple automation testing projects organized by techn
   - Uses testng-selenium-framework library
   - Maven-based project structure
 
-  - ![selenium-testng-project](images/selenium-projects.gif)
-  
+  - ![selenium-testng-project](images/selenium-project.gif)
+
   - ![selenium-testng-framework](images/testng-framework.gif)
 
 - **[Selenium Java TestNG Basics](Java/selenium-java-testng-basics/)** - Core Selenium and TestNG concepts
