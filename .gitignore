@@ -96,6 +96,9 @@ downloads/
 !src/test/resources/**/*.png
 !src/test/resources/**/*.jpg
 
+!images/**/*.png
+!images/**/*.jpg
+
 # Logs
 *.log
 *.log.*
