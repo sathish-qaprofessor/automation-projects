@@ -7,7 +7,15 @@
     "clean:reports": "rimraf cypress/reports",
     "cypress:open": "cypress open",
     "cypress:run": "cypress run",
-    "test:report": "npm-run-all --continue-on-error -s clean:reports cypress:run"
+    "cypress:run:dev": "cypress run --env env=dev",
+    "cypress:run:test": "cypress run --env env=test",
+    "cypress:run:staging": "cypress run --env env=staging",
+    "cypress:run:prod": "cypress run --env env=prod",
+    "test:report": "npm-run-all --continue-on-error -s clean:reports cypress:run",
+    "test:report:dev": "npm-run-all --continue-on-error -s clean:reports cypress:run:dev",
+    "test:report:test": "npm-run-all --continue-on-error -s clean:reports cypress:run:test",
+    "test:report:staging": "npm-run-all --continue-on-error -s clean:reports cypress:run:staging",
+    "test:report:prod": "npm-run-all --continue-on-error -s clean:reports cypress:run:prod"
   },
   "author": "",
   "license": "ISC",

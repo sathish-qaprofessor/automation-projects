@@ -1,7 +1,17 @@
 const { defineConfig } = require("cypress");
 import { plugin as cypressGrepPlugin } from '@cypress/grep/plugin'
+const fs = require("fs");
+const path = require("path");
 
 const softFailures = new Map();
+
+function loadEnvConfig(env) {
+  const envConfigPath = path.resolve(__dirname, `cypress/config/env.${env}.json`);
+  if (fs.existsSync(envConfigPath)) {
+    return JSON.parse(fs.readFileSync(envConfigPath, "utf-8"));
+  }
+  return {};
+}
 
 module.exports = defineConfig({
   reporter: "cypress-mochawesome-reporter",
@@ -23,6 +33,10 @@ module.exports = defineConfig({
       require("cypress-mochawesome-reporter/plugin")(on);
 
       cypressGrepPlugin(config);
+
+      const envName = config.env.environment || "dev";
+      const envConfig = loadEnvConfig(envName);
+      config.env = { ...config.env, ...envConfig };
       
       on('before:browser:launch', (browser, launchOptions) => {
         if (browser.family === 'chromium') {
