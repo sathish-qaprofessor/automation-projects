@@ -119,6 +119,7 @@ JavaScript/.vscode/tasks.json
 JavaScript/.vscode/launch.json
 JavaScript/.vscode/extensions.json
 JavaScript/**/node_modules/
+JavaScript/**/package-lock.json
 JavaScript/dist/
 JavaScript/build/
 JavaScript/.env
