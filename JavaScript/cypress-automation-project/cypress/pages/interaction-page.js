@@ -152,6 +152,9 @@ class InteractionPage {
       return cy.get('select#cars');
   }
 
+  get dropdownSelectedOption() {
+      return this.dropdownMenu.find('option:selected');
+  }
 
   // endregion Dropdown, Radio Button & Checkbox Page
 

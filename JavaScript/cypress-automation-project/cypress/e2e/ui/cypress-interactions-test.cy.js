@@ -115,7 +115,7 @@ describe("Cypress All Interactions Test Suite", () => {
         cy.assertAll();
     });
 
-    it.only('Verify Dropdown, Radio Button & Checkbox page content and selection', () => {
+    it('Verify Dropdown, Radio Button & Checkbox page content and selection', () => {
         cy.visit('https://www.automationtesting.co.uk/dropdown.html');
         interactionPage.drpdwnRadioCheckboxPageHeader.asserty('be.visible')
             .text().asserty('eq', 'Dropdown Menus, Radio Buttons & Checkboxes', 'Dropdown, Radio Button & Checkbox page header text is incorrect');
@@ -137,10 +137,14 @@ describe("Cypress All Interactions Test Suite", () => {
         interactionPage.blueCheckbox.check({ force: true })
             .asserty('be.checked', 'Blue checkbox should be selected');
 
-        // interactionPage.dropdownMenu.select('Honda').invoke('text').asserty('have.text', 'Honda', 'Dropdown menu should have Honda selected');
-        // interactionPage.dropdownMenu.select('BMW').invoke('text').asserty('have.text', 'BMW', 'Dropdown menu should have BMW selected');
-        // interactionPage.dropdownMenu.select('Audi').invoke('text').asserty('have.text', 'Audi', 'Dropdown menu should have Audi selected');
-        // interactionPage.dropdownMenu.invoke('text').asserty('have.text', 'Audi', 'Dropdown menu should have Audi selected');
+        interactionPage.dropdownMenu.select('Honda');
+        interactionPage.dropdownSelectedOption.asserty('have.text', 'Honda', 'Dropdown menu should have Honda selected');
+
+        interactionPage.dropdownMenu.select('BMW');
+        interactionPage.dropdownSelectedOption.asserty('have.text', 'BMW', 'Dropdown menu should have BMW selected');
+
+        interactionPage.dropdownMenu.select('Audi');
+        interactionPage.dropdownSelectedOption.asserty('have.text', 'Audi', 'Dropdown menu should have Audi selected');
 
         interactionPage.navigationTopMenu.filter(':visible').text()
             .asserty('deep.equal', ['Home', 'Animals', 'Sports'], 'Top navigation menu items do not match expected values');
