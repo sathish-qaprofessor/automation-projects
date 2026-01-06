@@ -42,6 +42,8 @@ This repository contains multiple automation testing projects organized by techn
   - Page Object Model pattern
   - Custom fixtures and data
 
+    ![Cypress-Api-Tests](images/cypress-api.png)
+
     ![Cypress-Automation-Project](images/cypress-project_.gif)
 
 ## 🛠️ Technologies & Frameworks
