@@ -4,11 +4,26 @@ import { plugin as cypressGrepPlugin } from '@cypress/grep/plugin'
 const softFailures = new Map();
 
 module.exports = defineConfig({
+  reporter: "cypress-mochawesome-reporter",
+
+  reporterOptions: {
+    reportDir: "cypress/reports/mochawesome",
+    overwrite: false,
+    html: false,
+    json: true,
+    embeddedScreenshots: true,
+    inlineAssets: true
+  },
+
   e2e: {
     specPattern: "cypress/e2e/**/*.cy.js",
+
     setupNodeEvents(on, config) {
       // implement node event listeners here
+      require("cypress-mochawesome-reporter/plugin")(on);
 
+      cypressGrepPlugin(config);
+      
       on('before:browser:launch', (browser, launchOptions) => {
         if (browser.family === 'chromium') {
           launchOptions.args.push('--ignore-certificate-errors');
@@ -39,16 +54,18 @@ module.exports = defineConfig({
           return null;
         }
       })
-
-      cypressGrepPlugin(config);
+      
       return config;
     },
   },
+
   env: {
     grepFilterSpecs: true,
     grepOmitFiltered: true,
   },
+
   viewportHeight: 900,
   viewportWidth: 1440,
   watchForFileChanges: false,
+  screenshotsFolder: "cypress/screenshots",
 });

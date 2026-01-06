@@ -19,6 +19,7 @@ import 'cypress-real-events/support';
 import 'cypress-wait-until';
 import 'cypress-commands';
 import '@4tw/cypress-drag-drop';
+import 'cypress-mochawesome-reporter/register';
 import { register as registerCypressGrep } from '@cypress/grep';
 
 registerCypressGrep()
